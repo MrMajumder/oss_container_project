@@ -1,0 +1,8 @@
+filebeat.inputs:
+ - type: log
+   paths:
+    - /tmp/*.scap
+ 
+output:
+  logstash:
+    hosts: [ "localhost:5044" ]
