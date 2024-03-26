@@ -1,0 +1,5 @@
+# to download strace
+sudo apt update && sudo apt install -y strace
+
+# to run strace (COMMAND is the bash command you want to trace)
+sudo strace -fvttTyy -s 256 -o ../stracedout.txt COMMAND
