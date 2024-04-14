@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo docker build --rm -t privilege_escalation .
-sudo docker run -v /tmp/:/shared/ privilege_escalation:latest /bin/sh shellscript.sh
+sudo docker run --cap-add=SYS_PTRACE -v /tmp/:/shared/ privilege_escalation:latest /bin/sh bosscript.sh
 echo "success 😈"

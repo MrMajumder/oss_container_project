@@ -1,0 +1,91 @@
+13    05:31:26.133291 execve("/bin/sh", ["/bin/sh", "-c", "cp shell /shared/shell && chmod 4777 /shared/shell"], ["HOSTNAME=1a437e2f1678", "SHLVL=1", "HOME=/root", "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/"]) = 0 <0.000273>
+13    05:31:26.133766 arch_prctl(ARCH_SET_FS, 0x7f054b263b08) = 0 <0.000056>
+13    05:31:26.133985 set_tid_address(0x7f054b263f70) = 13 <0.000063>
+13    05:31:26.134201 brk(NULL)         = 0x5600c6488000 <0.000099>
+13    05:31:26.134394 brk(0x5600c648a000) = 0x5600c648a000 <0.000061>
+13    05:31:26.134545 mmap(0x5600c6488000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x5600c6488000 <0.000078>
+13    05:31:26.134742 mprotect(0x7f054b260000, 4096, PROT_READ) = 0 <0.000074>
+13    05:31:26.134929 mprotect(0x5600c4f98000, 16384, PROT_READ) = 0 <0.000060>
+13    05:31:26.135086 getuid()          = 0 <0.000062>
+13    05:31:26.135278 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f054b1c1000 <0.000062>
+13    05:31:26.135441 getpid()          = 13 <0.000048>
+13    05:31:26.135563 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f054b1bf000 <0.000100>
+13    05:31:26.135844 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000093>
+13    05:31:26.136063 rt_sigaction(SIGCHLD, {sa_handler=0x5600c4f1722e, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x7f054b20fea8}, NULL, 8) = 0 <0.000093>
+13    05:31:26.136308 getppid()         = 10 <0.000069>
+13    05:31:26.136484 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f054b1be000 <0.000061>
+13    05:31:26.136695 stat("/", {st_dev=makedev(0, 0xfa), st_ino=48899, st_mode=S_IFDIR|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=8, st_size=4096, st_atime=1711863082 /* 2024-03-31T05:31:22.823525092+0000 */, st_atime_nsec=823525092, st_mtime=1711863083 /* 2024-03-31T05:31:23.473525095+0000 */, st_mtime_nsec=473525095, st_ctime=1711863086 /* 2024-03-31T05:31:26.043525106+0000 */, st_ctime_nsec=43525106}) = 0 <0.000140>
+13    05:31:26.137037 stat(".", {st_dev=makedev(0, 0xfa), st_ino=48899, st_mode=S_IFDIR|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=8, st_size=4096, st_atime=1711863082 /* 2024-03-31T05:31:22.823525092+0000 */, st_atime_nsec=823525092, st_mtime=1711863083 /* 2024-03-31T05:31:23.473525095+0000 */, st_mtime_nsec=473525095, st_ctime=1711863086 /* 2024-03-31T05:31:26.043525106+0000 */, st_ctime_nsec=43525106}) = 0 <0.000126>
+13    05:31:26.137338 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000098>
+13    05:31:26.137548 rt_sigaction(SIGINT, {sa_handler=0x5600c4f1722e, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x7f054b20fea8}, NULL, 8) = 0 <0.000095>
+13    05:31:26.137723 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000088>
+13    05:31:26.137923 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x7f054b20fea8}, NULL, 8) = 0 <0.000078>
+13    05:31:26.138082 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000055>
+13    05:31:26.138236 stat("/usr/local/sbin/cp", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000061>
+13    05:31:26.138387 stat("/usr/local/bin/cp", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000072>
+13    05:31:26.138550 stat("/usr/sbin/cp", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000067>
+13    05:31:26.138707 stat("/usr/bin/cp", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000157>
+13    05:31:26.139115 stat("/sbin/cp", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000173>
+13    05:31:26.139496 stat("/bin/cp", {st_dev=makedev(0, 0xfa), st_ino=46386, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=1584, st_size=808712, st_atime=1711859974 /* 2024-03-31T04:39:34.610189092+0000 */, st_atime_nsec=610189092, st_mtime=1699383189 /* 2023-11-07T18:53:09+0000 */, st_mtime_nsec=0, st_ctime=1711428445 /* 2024-03-26T04:47:25.887673043+0000 */, st_ctime_nsec=887673043}) = 0 <0.000126>
+13    05:31:26.139854 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0 <0.000151>
+13    05:31:26.140233 rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0 <0.000212>
+13    05:31:26.140637 fork()            = 14 <0.000312>
+14    05:31:26.140989 set_tid_address(0x7f054b263f70 <unfinished ...>
+13    05:31:26.141019 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2],  <unfinished ...>
+14    05:31:26.141054 <... set_tid_address resumed>) = 14 <0.000055>
+13    05:31:26.141083 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000051>
+14    05:31:26.141115 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2],  <unfinished ...>
+13    05:31:26.141147 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+14    05:31:26.141180 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000053>
+13    05:31:26.141211 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000052>
+14    05:31:26.141243 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+13    05:31:26.141283 wait4(-1,  <unfinished ...>
+14    05:31:26.141316 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000059>
+14    05:31:26.141464 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x7f054b20fea8}, NULL, 8) = 0 <0.000100>
+14    05:31:26.141733 execve("/bin/cp", ["cp", "shell", "/shared/shell"], ["HOSTNAME=1a437e2f1678", "SHLVL=2", "HOME=/root", "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/"]) = 0 <0.000403>
+14    05:31:26.142308 arch_prctl(ARCH_SET_FS, 0x7fb16e10bb08) = 0 <0.000089>
+14    05:31:26.142508 set_tid_address(0x7fb16e10bf70) = 14 <0.000084>
+14    05:31:26.142703 brk(NULL)         = 0x55f8f8ed0000 <0.000079>
+14    05:31:26.142894 brk(0x55f8f8ed2000) = 0x55f8f8ed2000 <0.000100>
+14    05:31:26.143092 mmap(0x55f8f8ed0000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x55f8f8ed0000 <0.000059>
+14    05:31:26.143285 mprotect(0x7fb16e108000, 4096, PROT_READ) = 0 <0.000059>
+14    05:31:26.143500 mprotect(0x55f8f7475000, 16384, PROT_READ) = 0 <0.000066>
+14    05:31:26.143647 getuid()          = 0 <0.000047>
+14    05:31:26.143821 stat("shell", {st_dev=makedev(0, 0xfa), st_ino=47500, st_mode=S_IFREG|0777, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711860702 /* 2024-03-31T04:51:42.416735125+0000 */, st_atime_nsec=416735125, st_mtime=1711435620 /* 2024-03-26T06:47:00+0000 */, st_mtime_nsec=0, st_ctime=1711860702 /* 2024-03-31T04:51:42.336735125+0000 */, st_ctime_nsec=336735125}) = 0 <0.000073>
+14    05:31:26.143989 stat("/shared/shell", {st_dev=makedev(0x8, 0x20), st_ino=433533, st_mode=S_IFREG|S_ISUID|0777, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711861408 /* 2024-03-31T05:03:28.006297064+0000 */, st_atime_nsec=6297064, st_mtime=1711861408 /* 2024-03-31T05:03:28.006297064+0000 */, st_mtime_nsec=6297064, st_ctime=1711861408 /* 2024-03-31T05:03:28.016297064+0000 */, st_ctime_nsec=16297064}) = 0 <0.000093>
+14    05:31:26.144206 stat("shell", {st_dev=makedev(0, 0xfa), st_ino=47500, st_mode=S_IFREG|0777, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711860702 /* 2024-03-31T04:51:42.416735125+0000 */, st_atime_nsec=416735125, st_mtime=1711435620 /* 2024-03-26T06:47:00+0000 */, st_mtime_nsec=0, st_ctime=1711860702 /* 2024-03-31T04:51:42.336735125+0000 */, st_ctime_nsec=336735125}) = 0 <0.000060>
+14    05:31:26.144403 lstat("/shared/shell", {st_dev=makedev(0x8, 0x20), st_ino=433533, st_mode=S_IFREG|S_ISUID|0777, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711861408 /* 2024-03-31T05:03:28.006297064+0000 */, st_atime_nsec=6297064, st_mtime=1711861408 /* 2024-03-31T05:03:28.006297064+0000 */, st_mtime_nsec=6297064, st_ctime=1711861408 /* 2024-03-31T05:03:28.016297064+0000 */, st_ctime_nsec=16297064}) = 0 <0.000060>
+14    05:31:26.144579 open("shell", O_RDONLY|O_LARGEFILE) = 3</shell> <0.000058>
+14    05:31:26.144774 open("/shared/shell", O_WRONLY|O_CREAT|O_EXCL|O_LARGEFILE, 0100777) = -1 EEXIST (File exists) <0.000052>
+14    05:31:26.144914 unlink("/shared/shell") = 0 <0.000113>
+14    05:31:26.145176 open("/shared/shell", O_WRONLY|O_CREAT|O_EXCL|O_LARGEFILE, 0100777) = 4</shared/shell> <0.000155>
+14    05:31:26.145565 sendfile(4</shared/shell>, 3</shell>, NULL, 16777216) = 16008 <0.000224>
+14    05:31:26.145878 sendfile(4</shared/shell>, 3</shell>, NULL, 16777216) = 0 <0.000059>
+14    05:31:26.146098 close(4</shared/shell>) = 0 <0.000058>
+14    05:31:26.146260 close(3</shell>)  = 0 <0.000098>
+14    05:31:26.146487 exit_group(0)     = ?
+14    05:31:26.146682 +++ exited with 0 +++
+13    05:31:26.146769 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14 <0.005476>
+13    05:31:26.146864 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+13    05:31:26.146961 rt_sigreturn({mask=[]}) = 14 <0.000071>
+13    05:31:26.147124 wait4(-1, 0x7ffd984a12ac, WNOHANG, NULL) = -1 ECHILD (No child process) <0.000077>
+13    05:31:26.147320 stat("/usr/local/sbin/chmod", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000078>
+13    05:31:26.147517 stat("/usr/local/bin/chmod", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000079>
+13    05:31:26.147690 stat("/usr/sbin/chmod", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000061>
+13    05:31:26.147839 stat("/usr/bin/chmod", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000073>
+13    05:31:26.147998 stat("/sbin/chmod", 0x7ffd984a1200) = -1 ENOENT (No such file or directory) <0.000060>
+13    05:31:26.148143 stat("/bin/chmod", {st_dev=makedev(0, 0xfa), st_ino=46386, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=1584, st_size=808712, st_atime=1711859974 /* 2024-03-31T04:39:34.610189092+0000 */, st_atime_nsec=610189092, st_mtime=1699383189 /* 2023-11-07T18:53:09+0000 */, st_mtime_nsec=0, st_ctime=1711428445 /* 2024-03-26T04:47:25.887673043+0000 */, st_ctime_nsec=887673043}) = 0 <0.000095>
+13    05:31:26.148371 execve("/bin/chmod", ["chmod", "4777", "/shared/shell"], ["HOSTNAME=1a437e2f1678", "SHLVL=2", "HOME=/root", "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/"]) = 0 <0.000385>
+13    05:31:26.148974 arch_prctl(ARCH_SET_FS, 0x7fa7d62f5b08) = 0 <0.000132>
+13    05:31:26.149276 set_tid_address(0x7fa7d62f5f70) = 13 <0.000159>
+13    05:31:26.149599 brk(NULL)         = 0x55f09763a000 <0.000132>
+13    05:31:26.149898 brk(0x55f09763c000) = 0x55f09763c000 <0.000135>
+13    05:31:26.150179 mmap(0x55f09763a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x55f09763a000 <0.000141>
+13    05:31:26.150528 mprotect(0x7fa7d62f2000, 4096, PROT_READ) = 0 <0.000118>
+13    05:31:26.150840 mprotect(0x55f0973ff000, 16384, PROT_READ) = 0 <0.000086>
+13    05:31:26.151063 getuid()          = 0 <0.000132>
+13    05:31:26.151391 lstat("/shared/shell", {st_dev=makedev(0x8, 0x20), st_ino=433533, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_atime_nsec=133525106, st_mtime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_mtime_nsec=133525106, st_ctime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_ctime_nsec=133525106}) = 0 <0.000144>
+13    05:31:26.151779 stat("/shared/shell", {st_dev=makedev(0x8, 0x20), st_ino=433533, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=16008, st_atime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_atime_nsec=133525106, st_mtime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_mtime_nsec=133525106, st_ctime=1711863086 /* 2024-03-31T05:31:26.133525106+0000 */, st_ctime_nsec=133525106}) = 0 <0.000140>
+13    05:31:26.152153 chmod("/shared/shell", 04777) = 0 <0.000159>
+13    05:31:26.152493 exit_group(0)     = ?
+13    05:31:26.152683 +++ exited with 0 +++
