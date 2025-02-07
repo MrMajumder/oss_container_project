@@ -49,24 +49,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-**Motivation**: `TODO`
+**Motivation**: Container escape is a term describing a type of vulnerability in which an attacker successfully gains unauthorized access to the host system's resources and data from within the container, either through executing a malicious image or building an image using a malicious Dockerfile or upstream image. Once an attacker gains access to the underlying host operating system, they could potentially access whatever data was on the system, including sensitive data (credentials, customer info, etc.), and launch further attacks.
 
-Developed for the "INSE 6130: Operating Systems Security", Winter 2024 course.
+In this project, we explore five (5) vulnerabilities related to container escape (including one recent 2024 CVE). We are divided into two teams: attacker and defenders. The attackers implemented the exploits for the 5 vulnerabilities, where the defenders created an ELK stack based log monitoring solution, where the system calls were correlated to detect the exploits.
+
+This project was developed for the "INSE 6130: Operating Systems Security", Winter 2024 course. Find the [slides](./presentation.pptx) and [final report](./report.pdf) here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
-`TODO` technology list
+Python, Shell Scripting, Elastic Search, Kibana, Logstash
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-### Project Images
-<p float="left" align="middle">
-  <img src="" width="300" alt="example" />
-</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,19 +73,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of list of things you need to use the software and how to install them.
-  ```sh
-  technologies list
-  ```
-
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mrmajumder/contestIO.git
+   git clone https://github.com/MrMajumder/oss_container_project
    ```
-2. `TODO`
+2. The `Attack` folder contains the implementation of the attacks.
+3. The `ELK Codes` contains the code to run the ELK stack. and `ELK Stack` contains the shell scripts to spin on, off the ELK stack, its installation etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +90,13 @@ This is an example of list of things you need to use the software and how to ins
 ## Contributors
 
 * Shafayat Hossain Majumder - [GitHub][github-url] | [LinkedIn][linkedin-url] | [Mail][email] | [Website][website-url]
-* `TODO` add yourself
+* Piyush Adhikari - [GitHub][https://github.com/adhikari-piyush41] | [LinkedIn][https://www.linkedin.com/in/piyush-adhikari/] | [Mail][mailto:adhikaripiyush41@gmail.com]
+* Sourov Jajodia
+* Tariq Houis
+* Fahimeh Rezaei
+* Rakshith Raj Gurupura Puttaraju
+* Hasan Ul Islam Shaffy
+* Mary Acquah
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
